@@ -10,7 +10,8 @@ pipeline {
                 echo 'Hello World'
                 git 'https://github.com/Naveen486/Jenkins.git'
                 sh 'go version'
-                sh 'go run Hello.go'
+                sh 'go build Hello.go'
+                sh './Hello'
             }
         }
     }
